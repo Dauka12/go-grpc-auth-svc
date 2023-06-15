@@ -5,11 +5,11 @@ import (
 	"log"
 	"net"
 
-	"github.com/hellokvn/go-grpc-auth-svc/pkg/config"
-	"github.com/hellokvn/go-grpc-auth-svc/pkg/db"
-	"github.com/hellokvn/go-grpc-auth-svc/pkg/pb"
-	"github.com/hellokvn/go-grpc-auth-svc/pkg/services"
-	"github.com/hellokvn/go-grpc-auth-svc/pkg/utils"
+	"github.com/Dauka12/go-grpc-auth-svc/pkg/config"
+	"github.com/Dauka12/go-grpc-auth-svc/pkg/db"
+	"github.com/Dauka12/go-grpc-auth-svc/pkg/pb"
+	"github.com/Dauka12/go-grpc-auth-svc/pkg/services"
+	"github.com/Dauka12/go-grpc-auth-svc/pkg/utils"
 	"google.golang.org/grpc"
 )
 
@@ -24,7 +24,7 @@ func main() {
 
 	jwt := utils.JwtWrapper{
 		SecretKey:       c.JWTSecretKey,
-		Issuer:          "go-grpc-auth-svc",
+		Issuer:          "authorization_microservice",
 		ExpirationHours: 24 * 365,
 	}
 

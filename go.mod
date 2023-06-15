@@ -1,4 +1,4 @@
-module github.com/hellokvn/go-grpc-auth-svc
+module github.com/Dauka12/go-grpc-auth-svc
 
 go 1.18
 
